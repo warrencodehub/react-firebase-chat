@@ -23,7 +23,7 @@ function App() {
     };
   }, [fetchUserInfo]);
 
-  if (isLoading) return <div className="loading">Loading please wait...</div>;
+  if (isLoading) return <div className="loading">Loading...</div>;
 
   return (
     <div className="container">
