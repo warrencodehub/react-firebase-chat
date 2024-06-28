@@ -9,7 +9,7 @@ import { auth } from "./lib/firebase";
 import { useUserStore } from "./lib/userStore";
 import { useChatStore } from "./lib/chatStore";
 
-const App = () => {
+function App() {
   const { currentUser, isLoading, fetchUserInfo } = useUserStore();
   const { chatId } = useChatStore();
 
@@ -26,21 +26,19 @@ const App = () => {
   if (isLoading) return <div className="loading">Loading...</div>;
 
   return (
-    <div className="App">
-      <div className="container">
-        {currentUser ? (
-          <>
-            <List />
-            {chatId && <Chat />}
-            {chatId && <Detail />}
-          </>
-        ) : (
-          <Login />
-        )}
-        <Notification />
-      </div>
+    <div className="container">
+      {currentUser ? (
+        <>
+          <List />
+          {chatId && <Chat />}
+          {chatId && <Detail />}
+        </>
+      ) : (
+        <Login />
+      )}
+      <Notification />
     </div>
   );
-};
+}
 
 export default App;
