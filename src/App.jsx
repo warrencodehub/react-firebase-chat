@@ -26,17 +26,19 @@ const App = () => {
   if (isLoading) return <div className="loading">Loading...</div>;
 
   return (
-    <div className="container">
-      {currentUser ? (
-        <>
-          <List />
-          {chatId && <Chat />}
-          {chatId && <Detail />}
-        </>
-      ) : (
-        <Login />
-      )}
-      <Notification />
+    <div className="App">
+      <div className="container">
+        {currentUser ? (
+          <>
+            <List />
+            {chatId && <Chat />}
+            {chatId && <Detail />}
+          </>
+        ) : (
+          <Login />
+        )}
+        <Notification />
+      </div>
     </div>
   );
 };
