@@ -1,7 +1,7 @@
 {
   "homepage": "https://warrenmrflr.github.io/react-firebase-chat-app",
   "name": "chat-starter",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
