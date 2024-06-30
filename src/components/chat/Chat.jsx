@@ -56,6 +56,12 @@ const Chat = () => {
     }
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      console.log("do valide");
+    }
+  };
+
   const handleSend = async () => {
     if (text === "") return;
 
