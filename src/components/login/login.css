@@ -69,3 +69,59 @@
     background-color: #dddddd35;
   }
 }
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
+@media screen and (max-width: 1024px) {
+  .login {
+    height: 60vh;
+    width: 60vh;
+    flex-direction: column;
+    gap: 50px;
+
+    .item {
+      gap: 0px;
+
+      h2 {
+        padding: 60px;
+      }
+
+      form {
+        input {
+          width: 30vh;
+          padding: 20px;
+        }
+      }
+    }
+  }
+
+  .separator {
+    height: 80vh;
+    width: 5px;
+    background-color: #dddddd35;
+  }
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
+@media screen and (max-width: 600px) {
+  .login {
+    height: 80vh;
+    width: 40vh;
+    flex-direction: column;
+    gap: 30px;
+
+    .item {
+      gap: 0px;
+
+      h2 {
+        padding: 30px;
+      }
+
+      form {
+        input {
+          width: 30vh;
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
