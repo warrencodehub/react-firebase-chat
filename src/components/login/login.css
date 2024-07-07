@@ -105,7 +105,7 @@
 @media screen and (max-width: 600px) {
   .login {
     height: 80vh;
-    width: 40vh;
+    width: 90vw;
     flex-direction: column;
     gap: 30px;
 
@@ -118,7 +118,7 @@
 
       form {
         input {
-          width: 30vh;
+          width: 70vw;
           padding: 20px;
         }
       }
